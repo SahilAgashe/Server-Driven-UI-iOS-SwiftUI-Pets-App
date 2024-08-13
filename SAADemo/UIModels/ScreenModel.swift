@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum ComponentError: Error {
+    case decodingError
+}
+
 enum ComponentType: String, Decodable {
     case featuredImage
 }
@@ -19,4 +23,22 @@ struct ScreenModel: Decodable {
 struct ComponentModel: Decodable {
     let type: ComponentType
     let data: [String: String]
+}
+
+extension ScreenModel {
+    func buildComponents() throws -> [UIComponent] {
+        var components: [UIComponent] = []
+        
+        for component in self.components {
+            switch component.type {
+            case .featuredImage:
+                guard let uiModel: FeaturedImageUIModel = component.data.decode() else {
+                    throw ComponentError.decodingError
+                }
+                components.append(FeaturedImageComponent(uiModel: uiModel))
+            }
+        }
+        
+        return components
+    }
 }
