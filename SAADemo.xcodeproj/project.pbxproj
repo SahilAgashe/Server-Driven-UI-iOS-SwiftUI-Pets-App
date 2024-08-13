@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810F16742C6B51250084B706 /* ScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810F16732C6B51250084B706 /* ScreenModel.swift */; };
 		8120DAFA2C688188000E3DDB /* SAADemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120DAF92C688188000E3DDB /* SAADemoApp.swift */; };
 		8120DAFC2C688188000E3DDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120DAFB2C688188000E3DDB /* ContentView.swift */; };
 		8120DAFE2C688189000E3DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8120DAFD2C688189000E3DDB /* Assets.xcassets */; };
 		8120DB012C688189000E3DDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8120DB002C688189000E3DDB /* Preview Assets.xcassets */; };
+		8120DB082C688219000E3DDB /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120DB072C688219000E3DDB /* Webservice.swift */; };
+		8120DB0A2C688241000E3DDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120DB092C688241000E3DDB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		810F16732C6B51250084B706 /* ScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenModel.swift; sourceTree = "<group>"; };
 		8120DAF62C688188000E3DDB /* SAADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8120DAF92C688188000E3DDB /* SAADemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAADemoApp.swift; sourceTree = "<group>"; };
 		8120DAFB2C688188000E3DDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8120DAFD2C688189000E3DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8120DB002C688189000E3DDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8120DB072C688219000E3DDB /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		8120DB092C688241000E3DDB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810F166E2C6B50050084B706 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8120DB072C688219000E3DDB /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		810F166F2C6B506A0084B706 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8120DB092C688241000E3DDB /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		810F16702C6B50850084B706 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8120DAFD2C688189000E3DDB /* Assets.xcassets */,
+				8120DAFF2C688189000E3DDB /* Preview Content */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		810F16712C6B50920084B706 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8120DAFB2C688188000E3DDB /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		810F16722C6B509B0084B706 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8120DAF92C688188000E3DDB /* SAADemoApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		810F16752C6B512A0084B706 /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				810F16732C6B51250084B706 /* ScreenModel.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
 		8120DAED2C688188000E3DDB = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +106,12 @@
 		8120DAF82C688188000E3DDB /* SAADemo */ = {
 			isa = PBXGroup;
 			children = (
-				8120DAF92C688188000E3DDB /* SAADemoApp.swift */,
-				8120DAFB2C688188000E3DDB /* ContentView.swift */,
-				8120DAFD2C688189000E3DDB /* Assets.xcassets */,
-				8120DAFF2C688189000E3DDB /* Preview Content */,
+				810F16722C6B509B0084B706 /* Application */,
+				810F16712C6B50920084B706 /* Views */,
+				810F16702C6B50850084B706 /* Supporting Files */,
+				810F166E2C6B50050084B706 /* Services */,
+				810F166F2C6B506A0084B706 /* Utils */,
+				810F16752C6B512A0084B706 /* UIModels */,
 			);
 			path = SAADemo;
 			sourceTree = "<group>";
@@ -138,7 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8120DAFC2C688188000E3DDB /* ContentView.swift in Sources */,
+				810F16742C6B51250084B706 /* ScreenModel.swift in Sources */,
 				8120DAFA2C688188000E3DDB /* SAADemoApp.swift in Sources */,
+				8120DB082C688219000E3DDB /* Webservice.swift in Sources */,
+				8120DB0A2C688241000E3DDB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +331,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SAADemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SAADemo/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = 4CJW76Y9FL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -299,7 +360,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SAADemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SAADemo/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = 4CJW76Y9FL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
