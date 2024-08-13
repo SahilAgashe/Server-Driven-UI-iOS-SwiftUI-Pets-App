@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		810F16742C6B51250084B706 /* ScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810F16732C6B51250084B706 /* ScreenModel.swift */; };
+		810F16772C6B530B0084B706 /* UIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810F16762C6B530B0084B706 /* UIComponent.swift */; };
+		810F167A2C6B53AE0084B706 /* FeaturedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810F16792C6B53AE0084B706 /* FeaturedImageComponent.swift */; };
 		8120DAFA2C688188000E3DDB /* SAADemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120DAF92C688188000E3DDB /* SAADemoApp.swift */; };
 		8120DAFC2C688188000E3DDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120DAFB2C688188000E3DDB /* ContentView.swift */; };
 		8120DAFE2C688189000E3DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8120DAFD2C688189000E3DDB /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		810F16732C6B51250084B706 /* ScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenModel.swift; sourceTree = "<group>"; };
+		810F16762C6B530B0084B706 /* UIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponent.swift; sourceTree = "<group>"; };
+		810F16792C6B53AE0084B706 /* FeaturedImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedImageComponent.swift; sourceTree = "<group>"; };
 		8120DAF62C688188000E3DDB /* SAADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8120DAF92C688188000E3DDB /* SAADemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAADemoApp.swift; sourceTree = "<group>"; };
 		8120DAFB2C688188000E3DDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 			path = UIModels;
 			sourceTree = "<group>";
 		};
+		810F16782C6B53110084B706 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				810F16762C6B530B0084B706 /* UIComponent.swift */,
+				810F16792C6B53AE0084B706 /* FeaturedImageComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8120DAED2C688188000E3DDB = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 				810F166E2C6B50050084B706 /* Services */,
 				810F166F2C6B506A0084B706 /* Utils */,
 				810F16752C6B512A0084B706 /* UIModels */,
+				810F16782C6B53110084B706 /* Components */,
 			);
 			path = SAADemo;
 			sourceTree = "<group>";
@@ -194,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810F167A2C6B53AE0084B706 /* FeaturedImageComponent.swift in Sources */,
 				8120DAFC2C688188000E3DDB /* ContentView.swift in Sources */,
+				810F16772C6B530B0084B706 /* UIComponent.swift in Sources */,
 				810F16742C6B51250084B706 /* ScreenModel.swift in Sources */,
 				8120DAFA2C688188000E3DDB /* SAADemoApp.swift in Sources */,
 				8120DB082C688219000E3DDB /* Webservice.swift in Sources */,
