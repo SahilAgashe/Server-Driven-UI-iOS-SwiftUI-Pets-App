@@ -12,7 +12,7 @@ struct FeaturedImageComponent: UIComponent {
     let uiModel: FeaturedImageUIModel
     
     var uniqueId: String {
-        ComponentType.featuredImage.rawValue
+        UUID().uuidString
     }
     
     func render() -> AnyView {

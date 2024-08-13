@@ -15,14 +15,15 @@ enum ComponentType: String, Decodable {
     case featuredImage
 }
 
-struct ScreenModel: Decodable {
-    let pageTitle: String
-    let components: [ComponentModel]
-}
-
 struct ComponentModel: Decodable {
     let type: ComponentType
     let data: [String: String]
+}
+
+// MARK: - ScreenModel
+struct ScreenModel: Decodable {
+    let pageTitle: String
+    let components: [ComponentModel]
 }
 
 extension ScreenModel {
